@@ -1,0 +1,5 @@
+shippingservice:
+  ribbon:
+    DeploymentContextBasedVipAddresses: shippingservice
+    ReadTimeout: 10000
+    MaxAutoRetries: 2

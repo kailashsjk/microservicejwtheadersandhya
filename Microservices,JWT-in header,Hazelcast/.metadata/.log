@@ -1,0 +1,474 @@
+!SESSION 2017-03-17 11:58:58.778 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-17 11:59:51.942
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kk00434287'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:40.962
+!MESSAGE Unable to load properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties. Falling back on embedded properties
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.loadProperties(VersionPropertiesProvider.java:276)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:151)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:217)
+	at org.jboss.tools.central.installation.InstallationChecker.<init>(InstallationChecker.java:53)
+	at org.jboss.tools.central.installation.InstallationChecker.getInstance(InstallationChecker.java:66)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:40.987
+!MESSAGE Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+
+!ENTRY org.jboss.tools.central 4 0 2017-03-17 12:00:41.470
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.createRemoteFileIOCoreException(InternalURLTransport.java:218)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.checkFile(InternalURLTransport.java:557)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.doGetLastModified(InternalURLTransport.java:211)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:175)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:144)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$2.run(URLTransportUtility.java:279)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:41.471
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+
+!ENTRY org.jboss.tools.project.examples 4 0 2017-03-17 12:00:43.033
+!MESSAGE All attempts to discover connectors have failed
+!SUBENTRY 1 org.eclipse.mylyn.discovery.core 4 0 2017-03-17 12:00:43.033
+!MESSAGE Failed to get connectors from RemoteProxyWizardDiscoveryStrategy
+!STACK 1
+org.eclipse.core.runtime.CoreException: HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	... 14 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2017-03-17 12:00:43.033
+!MESSAGE HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 3 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.033
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.346
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.347
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.347
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.347
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2017-03-17 12:00:43.348
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-shared-4.2.GA.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.350
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.350
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.351
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.351
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2017-03-17 12:00:43.352
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-maven-4.2.GA.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.385
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.386
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.386
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.386
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2017-03-17 12:00:43.386
+!MESSAGE Invalid URL: http://download.jboss.org/gatein/quickstarts/jboss-portal-6.2/project-examples-jboss-portal6.2-jbds8.0-001.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.408
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.408
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:00:43.408
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2017-03-17 12:00:43.408
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2017-03-17 12:00:43.409
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-community-4.2.Beta2.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.582
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.585
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.588
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.591
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.594
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.597
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.599
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.602
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.605
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.608
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.611
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.615
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.618
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.621
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.624
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.629
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.632
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.636
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.640
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.643
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.647
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.652
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-17 12:16:38.655
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+!SESSION 2017-03-17 12:16:45.671 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-17 12:17:02.189
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kk00434287'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2017-03-17 12:17:04.401
+!MESSAGE Unable to load properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties. Falling back on embedded properties
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.loadProperties(VersionPropertiesProvider.java:276)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:151)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:217)
+	at org.jboss.tools.central.installation.InstallationChecker.<init>(InstallationChecker.java:53)
+	at org.jboss.tools.central.installation.InstallationChecker.getInstance(InstallationChecker.java:66)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:17:04.402
+!MESSAGE Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+
+!ENTRY org.jboss.tools.project.examples 4 0 2017-03-17 12:17:04.580
+!MESSAGE All attempts to discover connectors have failed
+!SUBENTRY 1 org.eclipse.mylyn.discovery.core 4 0 2017-03-17 12:17:04.580
+!MESSAGE Failed to get connectors from RemoteProxyWizardDiscoveryStrategy
+!STACK 1
+org.eclipse.core.runtime.CoreException: HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	... 14 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2017-03-17 12:17:04.580
+!MESSAGE HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 3 org.eclipse.ecf.identity 4 0 2017-03-17 12:17:04.580
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 4 0 2017-03-17 12:17:05.075
+!MESSAGE java.lang.IllegalArgumentException: Negative time
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Negative time
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.jboss.tools.project.examples.model.ProjectExampleUtil.getProjects(ProjectExampleUtil.java:358)
+	at org.jboss.tools.project.examples.model.ProjectExampleUtil.getProjects(ProjectExampleUtil.java:321)
+	at org.jboss.tools.central.jobs.RefreshTutorialsJob.run(RefreshTutorialsJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: Negative time
+	at java.io.File.setLastModified(Unknown Source)
+	at org.jboss.tools.project.examples.model.ProjectExampleUtil.getProjectExamplesFile(ProjectExampleUtil.java:837)
+	at org.jboss.tools.project.examples.model.ProjectExampleUtil$FetchProjectExampleDocumentTask.call(ProjectExampleUtil.java:955)
+	at org.jboss.tools.project.examples.model.ProjectExampleUtil$FetchProjectExampleDocumentTask.call(ProjectExampleUtil.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.jboss.tools.central 4 0 2017-03-17 12:17:11.251
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.createRemoteFileIOCoreException(InternalURLTransport.java:218)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.checkFile(InternalURLTransport.java:557)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.doGetLastModified(InternalURLTransport.java:211)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:175)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:144)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$2.run(URLTransportUtility.java:279)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-17 12:17:11.251
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+!SESSION 2017-03-20 10:34:30.603 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-20 10:35:08.360
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kk00434287'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.central 4 0 2017-03-20 10:35:09.432
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.createRemoteFileIOCoreException(InternalURLTransport.java:218)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.checkFile(InternalURLTransport.java:557)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.doGetLastModified(InternalURLTransport.java:211)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:175)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:144)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$2.run(URLTransportUtility.java:279)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2017-03-20 10:35:09.440
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 

@@ -1,0 +1,8 @@
+sampleservice:
+  ribbon:
+    DeploymentContextBasedVipAddresses: orderservice
+    ReadTimeout: 99000
+    MaxAutoRetries: 3
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
+    ConnectTimeout: 99000

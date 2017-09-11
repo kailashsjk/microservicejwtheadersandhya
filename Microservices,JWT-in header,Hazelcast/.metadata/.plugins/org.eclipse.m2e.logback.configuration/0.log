@@ -1,0 +1,35 @@
+2017-03-17 12:12:54,988 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AuthService:AuthService:0.0.1-SNAPSHOT @ D:\microservice jwt\Microservices,JWT-in header,Hazelcast\AuthService\pom.xml.
+2017-03-17 12:14:17,884 [pool-3-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:/C:/Users/kk00434287/.m2/repository/org/springframework/spring-expression/4.3.3.RELEASE/spring-expression-4.3.3.RELEASE.pom
+2017-03-17 12:14:39,933 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.3.3.RELEASE/spring-expression-4.3.3.RELEASE.pom
+2017-03-17 12:15:01,996 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/ext-release-local/org/springframework/spring-expression/4.3.3.RELEASE/spring-expression-4.3.3.RELEASE.pom
+2017-03-17 12:15:23,003 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/milestone/org/springframework/spring-expression/4.3.3.RELEASE/spring-expression-4.3.3.RELEASE.pom
+2017-03-17 12:15:44,011 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/snapshot/org/springframework/spring-expression/4.3.3.RELEASE/spring-expression-4.3.3.RELEASE.pom
+2017-03-17 12:15:44,112 [pool-4-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:/C:/Users/kk00434287/.m2/repository/com/hazelcast/hazelcast/3.8/hazelcast-3.8.pom
+2017-03-17 12:15:54,123 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/hazelcast/hazelcast/3.8/hazelcast-3.8.pom
+2017-03-17 12:15:54,131 [pool-5-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:/C:/Users/kk00434287/.m2/repository/com/hazelcast/hazelcast-client/3.8/hazelcast-client-3.8.pom
+2017-03-17 12:15:54,136 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/hazelcast/hazelcast-client/3.8/hazelcast-client-3.8.pom
+2017-03-17 12:15:55,621 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AuthService:AuthService:0.0.1-SNAPSHOT @ D:\microservice jwt\Microservices,JWT-in header,Hazelcast\AuthService\pom.xml.
+2017-03-17 12:16:38,581 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,585 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,588 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,590 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,593 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,596 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,599 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,602 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,605 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,608 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,611 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,614 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,617 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,620 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,624 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,628 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,632 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,636 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,639 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,643 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,647 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,651 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-17 12:16:38,655 [Worker-25] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IMarkerLocationService
+2017-03-20 10:35:13,139 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AuthService:AuthService:0.0.1-SNAPSHOT @ D:\microservice jwt\Microservices,JWT-in header,Hazelcast\AuthService\pom.xml.
